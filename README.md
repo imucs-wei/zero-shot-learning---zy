@@ -25,7 +25,7 @@ CUDA_VISIBLE_DEVICES=2 python gan.py --gzsl --manualSeed 3483 --val_every 1 --cl
 
 # zsl_sun
 CUDA_VISIBLE_DEVICES=2 python gan.py --manualSeed 4115 --cls_weight 0.01 --val_every 1 --preprocessing --cuda --image_embedding res101 --class_embedding att --netG_name MLP_G --netD_name MLP_CRITIC --nepoch 70 --ngh 4096 --ndh 4096 --lambda1 10 --critic_iter 5 --dataset SUN --batch_size 64 --nz 102 --attSize 102 --resSize 2048 --lr 0.0002 --classifier_lr 0.0005 --syn_num 100 --outname sun 
-# gzsl_cub
+# gzsl_sun
 CUDA_VISIBLE_DEVICES=2 python gan.py --gzsl --manualSeed 4115 --cls_weight 0.01 --val_every 1 --preprocessing --cuda --image_embedding res101 --class_embedding att --netG_name MLP_G --netD_name MLP_CRITIC --nepoch 70 --ngh 4096 --ndh 4096 --lambda1 10 --critic_iter 5 --dataset SUN --batch_size 64 --nz 102 --attSize 102 --resSize 2048 --lr 0.0002 --syn_num 400 --classifier_lr 0.001 --nclass_all 717 --outname sun 
 
 
